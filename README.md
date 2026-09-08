@@ -28,4 +28,4 @@ The tab order follows the DOM order: the comparison filter comes first, followed
 
 ## Running
 
-Open `index.html` in a browser. No build step or dependencies are required.
+Open `index.html` in a browser.
