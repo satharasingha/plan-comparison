@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Plans</p>
+      <h1>Compare plans</h1>
+      <p class="intro">Choose the plan that fits your team. Turn on “Show differences only” to focus on what changes between plans.</p>
+
+      <label class="switch-row">
+        <input id="differencesOnly" type="checkbox">
+        <span class="switch" aria-hidden="true"></span>
+        <span>Show differences only</span>
+      </label>
+      <p id="comparisonStatus" class="sr-only" aria-live="polite"></p>
+    </header>
+
+    <section class="comparison" aria-labelledby="comparison-title">
+      <h2 id="comparison-title" class="sr-only">Plan comparison table</h2>
+
+      <div class="table-wrap">
+        <table id="planTable">
+          <caption class="sr-only">Comparison of Starter, Professional, and Business plans across features.</caption>
+          <colgroup>
+            <col class="feature-col">
+            <col class="plan-col">
+            <col class="plan-col">
+            <col class="plan-col">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">
+                <span class="plan-name">Starter</span>
+                <span class="price">$9</span><span class="per">/ user / month</span>
+              </th>
+              <th scope="col" class="featured">
+                <span class="badge">Most popular</span>
+                <span class="plan-name">Professional</span>
+                <span class="price">$19</span><span class="per">/ user / month</span>
+              </th>
+              <th scope="col">
+                <span class="plan-name">Business</span>
+                <span class="price">$39</span><span class="per">/ user / month</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-values="same">
+              <th scope="row">Projects</th>
+              <td>5</td><td>25</td><td>Unlimited</td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Team members</th>
+              <td>Up to 3</td><td>Up to 15</td><td>Unlimited</td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Storage</th>
+              <td>10 GB</td><td>100 GB</td><td>1 TB</td>
+            </tr>
+            <tr data-values="same">
+              <th scope="row">File sharing</th>
+              <td><span class="yes">Included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Advanced analytics</th>
+              <td><span class="no">Not included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Custom reports</th>
+              <td><span class="no">Not included</span></td><td>10 reports</td><td>Unlimited</td>
+            </tr>
+            <tr data-values="same">
+              <th scope="row">Mobile apps</th>
+              <td><span class="yes">iOS &amp; Android</span></td><td><span class="yes">iOS &amp; Android</span></td><td><span class="yes">iOS &amp; Android</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">API access</th>
+              <td><span class="no">Not included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">SSO</th>
+              <td><span class="no">Not included</span></td><td><span class="no">Not included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="same">
+              <th scope="row">Email support</th>
+              <td><span class="yes">Included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Priority support</th>
+              <td><span class="no">Not included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Automation rules</th>
+              <td>5</td><td>50</td><td>Unlimited</td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Audit log</th>
+              <td>7 days</td><td>90 days</td><td>1 year</td>
+            </tr>
+            <tr data-values="same">
+              <th scope="row">Data export</th>
+              <td><span class="yes">Included</span></td><td><span class="yes">Included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+            <tr data-values="different">
+              <th scope="row">Dedicated account manager</th>
+              <td><span class="no">Not included</span></td><td><span class="no">Not included</span></td><td><span class="yes">Included</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="plan-actions" aria-label="Choose a plan">
+        <a href="#" class="button secondary">Choose Starter</a>
+        <a href="#" class="button primary">Choose Professional</a>
+        <a href="#" class="button secondary">Choose Business</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
