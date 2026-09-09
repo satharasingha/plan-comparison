@@ -1,5 +1,9 @@
 # Plan Comparison
+## Project Notes
 
+This project provides an easy way to compare different plans and their features.
+
+The goal is to present the information clearly and make the comparison simple for users.
 ## Overview
 
 This is a responsive, accessible comparison page for three plans across 15 features.
